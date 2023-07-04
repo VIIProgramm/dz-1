@@ -18,3 +18,23 @@ let radius = +(prompt('Введите радиус окружности') as str
 alert((radius ** 2) * Math.PI)
 
 // Задание 5
+let distace = +(prompt('Введите расстояние между городуми в км(единицу измерения указывать не нужно)') as string)
+let time = +(prompt('Введите за сколько часов вы хотите проехать это расстояние') as string)
+alert('Для этого вам нужно двигаться со скоростью ' + distace / time + ' км/час') 
+
+// задание 6
+const usdEuro = 0.92
+let dollarUS = +(prompt('Доллар США') as string)
+alert('Евро ' + usdEuro * dollarUS)
+
+// задание 7
+let memoryBank = +(prompt('Введите количество свободных ГБ в вашем електронном хранители') as string) * 1024
+alert('Поместитья ' + memoryBank / 820 + 'фаилов')
+
+// задание 8
+let balance = +(prompt('Введите сколько рублей на вашем балансе') as string)
+let price = +(prompt('Введите стоймость 1 шоколадки') as string)
+alert('Вы можете купить ' + balance/price + ' шоколадок')
+
+//Задание 9
+

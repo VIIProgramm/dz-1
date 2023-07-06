@@ -29,7 +29,7 @@ alert('Евро ' + usdEuro * dollarUS)
 
 // задание 7
 let memoryBank = +(prompt('Введите количество свободных ГБ в вашем електронном хранители') as string) * 1024
-alert('Поместитья ' + memoryBank / 820 + 'фаилов')
+alert('Поместитья ' + memoryBank / 820 + ' фаилов')
 
 // задание 8
 let balance = +(prompt('Введите сколько рублей на вашем балансе') as string)
@@ -37,4 +37,15 @@ let price = +(prompt('Введите стоймость 1 шоколадки') a
 alert('Вы можете купить ' + balance/price + ' шоколадок')
 
 //Задание 9
+let number = +(prompt('Введите трёхзначное число') as string)
+let numberRev = ''
+for (let i = 0; i < 3; i++){
+    let n =number%10
+    numberRev += String(n)
+    number = Math.floor(number/10)
+}
+alert('Вот это число, но наоборот: ' + numberRev)
 
+//Задание 10
+number = +(prompt('Введите число') as string)
+number % 2 == 0 ? alert('Чётное'):alert('Нечётное')
